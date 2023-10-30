@@ -250,7 +250,7 @@ Toolkit.run(
           return true;
         }
         if (line !== "") {
-          readmeContent[startIdx + idx] = `${content[count]}`;
+          readmeContent[startIdx + idx] = `<p align="center">${content[count]}</p>`;
           count++;
         }
       });
