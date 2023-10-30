@@ -223,9 +223,6 @@ Toolkit.run(
     const oldContent = readmeContent.slice(startIdx + 1, endIdx).join("\n");
     const newContent = content.join("\n");
 
-    // for testing purposes
-    // if (oldContent.trim() === newContent.trim())
-      // tools.exit.success("No changes detected");
 
     startIdx++;
 
