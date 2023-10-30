@@ -190,10 +190,15 @@ Toolkit.run(
 
     if (startIdx !== -1 && endIdx === -1) {
       // Add one since the content needs to be inserted just after the initial comment
+
+      tools.log.debug("contents before foreach: ", content);
+      
       startIdx++;
       content.forEach((line, idx) =>
         readmeContent.splice(startIdx + idx, 0, `${line}`)
       );
+
+      tools.log.debug("contents after foreach: ", content);
 
       // Append <!--END_SECTION:activity--> comment
       readmeContent.splice(
