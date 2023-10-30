@@ -195,7 +195,7 @@ Toolkit.run(
       
       startIdx++;
       content.forEach((line, idx) =>
-        readmeContent.splice(startIdx + idx, 0, `${line}`)
+        readmeContent.splice(startIdx + idx, 0, `<p align="center"> ${line} </p>`)
       );
 
       tools.log.debug("contents after foreach: ", content);
