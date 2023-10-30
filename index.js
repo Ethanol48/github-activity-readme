@@ -157,6 +157,13 @@ Toolkit.run(
       // Call the serializer to construct a string
       .map((item) => serializers[item.type](item));
 
+    tools.log.debug(
+      `Content: ${content}`
+    );
+    tools.log.debug(
+      `Content 0: ${content[0]}`
+    );
+
     const readmeContent = fs
       .readFileSync(`./${TARGET_FILE}`, "utf-8")
       .split("\n");
